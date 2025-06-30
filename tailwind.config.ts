@@ -14,16 +14,51 @@ const config: Config = {
         'inter': ['var(--font-inter)'],
       },
       colors: {
-        primary: '#006464', // Teal green - new primary color
-        secondary: '#D2B48C', // Tan/beige - matching logo cream
-        accent: '#F5E6D3', // Light cream - background accent
-        waffle: {
-          brown: '#8B4513', // Dark chocolate brown
-          tan: '#D2B48C', // Warm tan/beige
-          cream: '#F5E6D3', // Light cream
-          golden: '#DEB887', // Burlywood golden
-          dark: '#654321', // Darker brown for accents
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        waffle: {
+          brown: '#8B4513',
+          tan: '#D2B48C',
+          cream: '#F5E6D3',
+          golden: '#DEB887',
+          dark: '#654321',
+        },
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
     },
   },
