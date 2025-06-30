@@ -101,11 +101,11 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-primary mb-4 font-comfortaa">Contact & Commandes</h3>
             <div className="space-y-3">
               <a 
-                href="tel:+221771234567"
+                href="tel:+221771595352"
                 className="flex items-center text-gray-600 hover:text-primary transition-colors"
               >
                 <FontAwesomeIcon icon={faPhone} className="h-4 w-4 mr-3" />
-                +221 77 123 45 67
+                +221 77 159 53 52
               </a>
               <a 
                 href="https://wa.me/221771234567"
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-secondary/10">
           <div className="text-center text-gray-500 space-y-2">
             <p>
-              © {currentYear} Le Cadre Traiteur. Tous droits réservés.
+              © {currentYear} Le Cadre. Tous droits réservés.
             </p>
             <p className="text-sm">
               Développé avec 🍽️ & ❤️ par <a href="https://agencearcane.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/90">Agence Arcane</a>

@@ -51,10 +51,10 @@ export const SupportSection = () => {
             </p>
             <div className="space-y-3">
               <a
-                href="tel:+221771234567"
+                href="tel:+221771595352"
                 className="block text-secondary hover:text-accent transition-colors font-bold"
               >
-                📞 +221 77 123 45 67
+                📞 +221 77 159 53 52
               </a>
               <a
                 href="mailto:contact@lecadre-traiteur.sn"

@@ -1,32 +1,75 @@
-'use client';
-
-import { FaPhone, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { FaPhone } from 'react-icons/fa';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
+import { ContactActions } from '@/components/contact/ContactActions';
+import { WhatsAppButton } from '@/components/contact/WhatsAppButton';
+
+export const metadata = {
+  title: 'Contact - Le Cadre',
+  description: 'Contactez Le Cadre, votre traiteur professionnel à Dakar. Devis personnalisés pour entreprises et événements.',
+};
 
 export default function ContactPage() {
-  const handleCall = () => {
-    window.location.href = 'tel:+221771234567';
-  };
-
-  const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/221771234567?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20les%20services%20de%20Le%20Cadre%20!';
-  };
-
-  const handleInstagram = () => {
-    window.open('https://instagram.com/lecadre_traiteur', '_blank');
-  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100">
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold font-fredoka mb-4">Contactez Le Cadre</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-comfortaa">
-            Besoin d&apos;un service traiteur professionnel ? Notre équipe est à votre disposition pour répondre à toutes vos demandes et établir un devis personnalisé ! 🍽️
-          </p>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[70vh] min-h-[500px] w-full flex items-center">
+        <div className="absolute inset-0 z-0 pt-16">
+          <Image
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a"
+            alt="Contactez Le Cadre - Service Client Professionnel"
+            fill
+            className="object-cover brightness-50"
+            priority
+          />
         </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="text-white">
+              <h1 className="text-4xl md:text-6xl font-bold font-fredoka mb-4">
+                Contactez-Nous
+              </h1>
+              <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto">
+                Besoin d&apos;un service traiteur professionnel ? Notre équipe est à votre disposition pour répondre à toutes vos demandes et établir un devis personnalisé ! 🍽️
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/devis" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-black hover:bg-gray-200 text-base w-full sm:w-[220px] h-[60px] border-2 border-white hover:border-gray-200 flex items-center justify-center font-comfortaa font-bold px-4">
+                    Demander un Devis 📋
+                  </Button>
+                </Link>
+                <div className="w-full sm:w-auto">
+                   <WhatsAppButton className="bg-secondary/5 backdrop-blur-sm hover:bg-secondary/20 text-base w-full sm:w-[220px] h-[60px] border-2 border-white hover:border-white text-white hover:text-white transition-colors duration-200 flex items-center justify-center gap-2 font-comfortaa px-4">
+                     WhatsApp 💬
+                   </WhatsAppButton>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      {/* Contact Content */}
+       <section className="py-20 bg-white">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+             <div className="inline-block relative">
+               <h2 className="text-5xl md:text-6xl font-fredoka leading-tight mb-4">
+                 <span className="text-[#006464] font-bold">
+                   NOUS CONTACTER
+                 </span>
+               </h2>
+               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-[#006464] rounded-full"></div>
+             </div>
+             <p className="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">
+               Votre satisfaction est notre priorité. Contactez-nous pour tous vos besoins en restauration ! 📞
+             </p>
+           </div>
+
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -49,7 +92,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900 font-comfortaa">Téléphone</h3>
-                    <p className="text-gray-600">+221 77 123 45 67</p>
+                    <p className="text-gray-600">+221 77 159 53 52</p>
                   </div>
                 </div>
 
@@ -64,31 +107,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-8 flex gap-4">
-                <button
-                  onClick={handleCall}
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-comfortaa"
-                  aria-label="Appeler"
-                >
-                  <FaPhone className="mr-2" />
-                  Appeler
-                </button>
-                <button
-                  onClick={handleWhatsApp}
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#25D366]/90 transition-colors font-comfortaa"
-                  aria-label="WhatsApp"
-                >
-                  <FaWhatsapp className="mr-2" />
-                  WhatsApp
-                </button>
-                <button
-                  onClick={handleInstagram}
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-[#E4405F] text-white rounded-lg hover:bg-[#E4405F]/90 transition-colors font-comfortaa"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram className="mr-2" />
-                  Instagram
-                </button>
+              <div className="mt-8">
+                <ContactActions />
               </div>
             </div>
 
@@ -144,6 +164,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+    </section>
     </div>
   );
 }

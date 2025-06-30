@@ -35,7 +35,9 @@ export function ReservationModal({ children }: ReservationModalProps) {
 - Nombre de personnes: ${guests}`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/+221771595352?text=${encodedMessage}`, '_blank');
+    if (typeof window !== 'undefined') {
+      window.open(`https://wa.me/+221771595352?text=${encodedMessage}`, '_blank');
+    }
   };
 
   const timeSlots = [
@@ -140,4 +142,4 @@ export function ReservationModal({ children }: ReservationModalProps) {
       </DialogContent>
     </Dialog>
   );
-} 
+}

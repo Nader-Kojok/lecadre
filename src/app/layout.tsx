@@ -51,23 +51,23 @@ export const metadata: Metadata = {
       url: '/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Mrs Waffles - Gaufres gourmandes et délicieuses à Dakar',
+      alt: 'Le Cadre - Traiteur professionnel à Dakar',
       type: 'image/jpeg',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Mrs Waffles - Gaufres Gourmandes à Dakar",
-    description: "Gaufres maison 🧇 | 100% plaisir & gourmandise 😋 | Livraison sur Dakar 📍",
+    title: "Le Cadre - Traiteur Professionnel à Dakar",
+    description: "Traiteur professionnel 🍽️ | Formules entreprises & événements 🎉 | Service sur Dakar 📍",
     images: [{
       url: '/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Mrs Waffles - Gaufres gourmandes et délicieuses à Dakar',
+      alt: 'Le Cadre - Traiteur professionnel à Dakar',
       type: 'image/jpeg',
     }],
-    creator: "@mrswaffles",
-    site: "@mrswaffles",
+    creator: "@lecadre_traiteur",
+    site: "@lecadre_traiteur",
   },
   robots: {
     index: true,
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     google: 'votre-code-de-verification-google',
   },
   alternates: {
-    canonical: 'https://mrswaffles.sn',
+    canonical: 'https://lecadre-traiteur.com',
   },
 };
 
@@ -102,18 +102,18 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Restaurant",
-              "name": "Mrs Waffles",
-              "image": "https://mrswaffles.sn/og-image.jpg",
-              "description": "Gaufres maison 🧇 | 100% plaisir & gourmandise 😋 | Livraison sur Dakar 📍",
-              "@id": "https://mrswaffles.sn",
-              "url": "https://mrswaffles.sn",
+              "name": "Le Cadre",
+              "image": "https://lecadre-traiteur.com/og-image.jpg",
+              "description": "Traiteur professionnel 🍽️ | Formules entreprises & événements 🎉 | Service sur Dakar 📍",
+              "@id": "https://lecadre-traiteur.com",
+              "url": "https://lecadre-traiteur.com",
               "telephone": "+221771595352",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Dakar",
                 "addressCountry": "SN"
               },
-              "servesCuisine": ["Desserts", "Gaufres", "Waffles"],
+              "servesCuisine": ["Cuisine d'entreprise", "Traiteur", "Événementiel"],
               "priceRange": "$",
               "openingHoursSpecification": [
                 {
@@ -123,7 +123,7 @@ export default function RootLayout({
                   "closes": "22:00"
                 }
               ],
-              "menu": "https://mrswaffles.sn/menu",
+              "menu": "https://lecadre-traiteur.com/menu",
               "deliveryService": "True"
             })
           }}

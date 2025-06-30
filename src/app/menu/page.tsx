@@ -79,7 +79,7 @@ const waffleItems: WaffleItem[] = [
   {
     id: 6,
     name: 'Gaufres El Mordjene',
-    description: 'la signature Mrs Waffles, ultra gourmande',
+    description: 'la signature Le Cadre, ultra savoureuse',
     price: 3000,
     category: 'waffle',
     image: 'https://images.unsplash.com/photo-1562440499-64c9a74f0f78',
@@ -118,10 +118,10 @@ export default function MenuPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
-            Mrs. Waffles
+            Le Cadre
           </h1>
           <p className="text-xl text-amber-700 font-medium">
-            L&apos;art des Gaufres
+            L&apos;art du Traiteur
           </p>
           <div className="w-24 h-1 bg-amber-600 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -200,4 +200,4 @@ export default function MenuPage() {
       </div>
     </div>
   );
-} 
+}

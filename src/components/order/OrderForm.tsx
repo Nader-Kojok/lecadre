@@ -89,7 +89,7 @@ const OrderForm = ({ isOpen, onClose }: OrderFormProps) => {
       : '\nÀ récupérer au restaurant';
 
     return encodeURIComponent(
-      `🧇 Nouvelle commande Mrs. Waffles :\n\n`
+      `🍽️ Nouvelle commande Le Cadre :\n\n`
       + `Client: ${orderDetails.name}\n`
       + `Téléphone: ${orderDetails.phone}\n\n`
       + `Commande:\n${itemsList}\n\n`
@@ -110,7 +110,9 @@ const OrderForm = ({ isOpen, onClose }: OrderFormProps) => {
       return;
     }
 
-    window.open(`https://wa.me/+221771595352?text=${formatWhatsAppMessage()}`, '_blank');
+    if (typeof window !== 'undefined') {
+      window.open(`https://wa.me/+221771595352?text=${formatWhatsAppMessage()}`, '_blank');
+    }
     handleClose();
   };
 
@@ -255,4 +257,4 @@ const OrderForm = ({ isOpen, onClose }: OrderFormProps) => {
   );
 };
 
-export default OrderForm; 
+export default OrderForm;
