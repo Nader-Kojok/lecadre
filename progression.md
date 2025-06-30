@@ -67,8 +67,8 @@
 - [x] **Données de contact** : Vérifier la cohérence des numéros de téléphone - CORRIGÉ
   - Tous les numéros uniformisés vers +221 77 159 53 52
   - Contact page, Footer, SupportSection corrigés
-- [ ] **Formulaire de devis** : Tester la validation et l'envoi
-- [ ] **Système de statut** : Vérifier les horaires d'ouverture
+- [x] **Formulaire de devis** : Tester la validation et l'envoi
+- [x] **Système de statut** : Vérifier les horaires d'ouverture
 
 ---
 
@@ -82,19 +82,19 @@
 
 2. **Nettoyage des assets**
    - [x] Supprimer `waffles.png` et autres images non pertinentes
-   - [ ] Ajouter des images appropriées pour Le Cadre
-   - [ ] Optimiser les images existantes
+   - [x] Ajouter des images appropriées pour Le Cadre
+   - [x] Optimiser les images existantes
 
 3. **Tests fonctionnels**
-   - [ ] Tester le formulaire de devis complet
-   - [ ] Vérifier les liens de contact (WhatsApp, Instagram)
-   - [ ] Tester le système de statut restaurant
+   - [x] Tester le formulaire de devis complet
+   - [x] Vérifier les liens de contact (WhatsApp, Instagram)
+   - [x] Tester le système de statut restaurant
 
 ### 📅 Sprint 2 - Améliorations & Contenu (2-3 jours)
 1. **Contenu enrichi**
-   - [ ] Ajouter de vraies photos de plats
-   - [ ] Créer du contenu spécifique aux formules entreprises
-   - [ ] Développer la section témoignages clients
+   - [x] Ajouter de vraies photos de plats
+   - [x] Créer du contenu spécifique aux formules entreprises
+   - [x] Développer la section témoignages clients
 
 2. **Fonctionnalités avancées**
    - [ ] Système de réservation en ligne
@@ -102,7 +102,6 @@
    - [ ] Galerie photos des événements
 
 3. **Performance & SEO**
-   - [ ] Audit de performance Lighthouse
    - [ ] Optimisation des Core Web Vitals
    - [ ] Schema markup pour le SEO local
 

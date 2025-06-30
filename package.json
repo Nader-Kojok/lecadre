@@ -31,6 +31,7 @@
     "@types/google.maps": "^3.54.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "critters": "^0.0.23",
     "date-fns": "^3.3.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.330.0",
@@ -45,6 +46,7 @@
     "react-leaflet": "^4.2.1",
     "sonner": "^1.4.0",
     "tailwind-merge": "^2.2.1",
+    "web-vitals": "^5.0.3",
     "zod": "^3.22.4",
     "zustand": "^4.5.0"
   },

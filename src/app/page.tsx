@@ -4,6 +4,7 @@ import { ProblemsSection } from '@/components/sections/ProblemsSection';
 import { SpecialtiesSection } from '@/components/sections/SpecialtiesSection';
 import { FormulasSection } from '@/components/sections/FormulasSection';
 import { IndividualFormulasSection } from '@/components/sections/IndividualFormulasSection';
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { SupportSection } from '@/components/sections/SupportSection';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <SpecialtiesSection />
       <FormulasSection />
       <IndividualFormulasSection />
+      <TestimonialsSection />
       <SupportSection />
       <CTASection />
     </div>

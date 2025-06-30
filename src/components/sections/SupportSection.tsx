@@ -142,22 +142,7 @@ export const SupportSection = () => {
             </div>
           </div>
         </div>
-        
-        {/* Testimonial section */}
-        <div className="bg-white/5 backdrop-blur-lg rounded-xl p-8 border border-white/10 text-center">
-          <FontAwesomeIcon icon={faHeart} className="h-12 w-12 text-red-400 mx-auto mb-6" />
-          <blockquote className="text-xl italic text-gray-200 mb-6 max-w-3xl mx-auto">
-            "Le Cadre a transformé nos pauses déjeuner ! Des repas délicieux, une livraison ponctuelle et un service client exceptionnel. Nous recommandons vivement !"
-          </blockquote>
-          <div className="flex justify-center items-center space-x-2">
-            <div className="text-lg font-bold">— Directeur RH, Entreprise Partenaire</div>
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <FontAwesomeIcon key={i} icon={faStar} className="h-4 w-4 text-yellow-400 ml-1" />
-              ))}
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );

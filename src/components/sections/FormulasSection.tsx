@@ -165,7 +165,7 @@ export const FormulasSection = () => {
         <div className="text-center mt-12">
           <Link href="/contact">
             <Button size="lg" className="bg-[#006464] hover:bg-secondary text-white text-lg px-8 py-4 font-comfortaa font-bold transition-all duration-300 shadow-lg hover:shadow-xl">
-              Demander un Devis Personnalisé 📞
+              Demander un Devis Personnalisé
             </Button>
           </Link>
         </div>

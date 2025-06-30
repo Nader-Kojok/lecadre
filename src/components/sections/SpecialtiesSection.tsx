@@ -89,40 +89,64 @@ export const SpecialtiesSection = () => {
             Nos Plats les Plus Appréciés
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="text-center mb-4">
-                <div className="text-4xl mb-2">🍛</div>
-                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors">
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Riz au Gras Premium - Le Cadre"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors mb-2">
                   Riz au Gras Premium
                 </h4>
+                <p className="text-gray-300 text-sm">
+                  Notre version revisitée du classique ivoirien avec des légumes frais et des épices authentiques.
+                </p>
               </div>
-              <p className="text-gray-300 text-sm text-center">
-                Notre version revisitée du classique ivoirien avec des légumes frais et des épices authentiques.
-              </p>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="text-center mb-4">
-                <div className="text-4xl mb-2">🐟</div>
-                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors">
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop&crop=center"
+                  alt="Poisson Braisé Délice - Le Cadre"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors mb-2">
                   Poisson Braisé Délice
                 </h4>
+                <p className="text-gray-300 text-sm">
+                  Poisson frais grillé aux épices locales, accompagné d'attiéké et de légumes croquants.
+                </p>
               </div>
-              <p className="text-gray-300 text-sm text-center">
-                Poisson frais grillé aux épices locales, accompagné d'attiéké et de légumes croquants.
-              </p>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="text-center mb-4">
-                <div className="text-4xl mb-2">🥘</div>
-                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors">
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Sauce Arachide Royale - Le Cadre"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-bold text-white group-hover:text-secondary transition-colors mb-2">
                   Sauce Arachide Royale
                 </h4>
+                <p className="text-gray-300 text-sm">
+                  Sauce onctueuse aux arachides avec viande tendre, servie avec du riz parfumé.
+                </p>
               </div>
-              <p className="text-gray-300 text-sm text-center">
-                Sauce onctueuse aux arachides avec viande tendre, servie avec du riz parfumé.
-              </p>
             </div>
           </div>
         </div>

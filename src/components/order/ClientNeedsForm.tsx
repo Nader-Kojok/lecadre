@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import {
@@ -103,7 +105,7 @@ export default function ClientNeedsForm({ isOpen, onClose }: ClientNeedsFormProp
     
     try {
       const message = formatWhatsAppMessage(clientNeeds);
-      const whatsappUrl = `https://wa.me/221781234567?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/+221771595352?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
       
       setTimeout(() => {

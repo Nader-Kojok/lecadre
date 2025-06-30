@@ -6,6 +6,9 @@ import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { StatusModal } from '@/components/restaurant-status/StatusModal';
+import { WebVitals, WebVitalsDebug } from '@/components/performance/WebVitals';
+import { FontOptimization } from '@/components/performance/FontOptimization';
+import { ResourceOptimization } from '@/components/performance/ResourceOptimization';
 
 config.autoAddCss = false;
 
@@ -101,30 +104,112 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Restaurant",
+              "@type": ["Restaurant", "FoodEstablishment", "LocalBusiness"],
               "name": "Le Cadre",
-              "image": "https://lecadre-traiteur.com/og-image.jpg",
-              "description": "Traiteur professionnel 🍽️ | Formules entreprises & événements 🎉 | Service sur Dakar 📍",
+              "alternateName": "Le Cadre Traiteur",
+              "image": [
+                "https://lecadre-traiteur.com/og-image.jpg",
+                "https://lecadre-traiteur.com/logo.svg"
+              ],
+              "description": "Traiteur professionnel à Dakar spécialisé dans les formules entreprises et événements sur mesure. Service de livraison et restauration personnalisée.",
               "@id": "https://lecadre-traiteur.com",
               "url": "https://lecadre-traiteur.com",
               "telephone": "+221771595352",
+              "email": "contact@lecadre-traiteur.com",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Dakar",
-                "addressCountry": "SN"
+                "addressRegion": "Dakar",
+                "addressCountry": "SN",
+                "postalCode": "10000"
               },
-              "servesCuisine": ["Cuisine d'entreprise", "Traiteur", "Événementiel"],
-              "priceRange": "$",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 14.6937,
+                "longitude": -17.4441
+              },
+              "servesCuisine": [
+                "Cuisine d'entreprise",
+                "Traiteur",
+                "Événementiel",
+                "Cuisine sénégalaise",
+                "Cuisine internationale"
+              ],
+              "priceRange": "$$",
+              "currenciesAccepted": "XOF",
+              "paymentAccepted": ["Cash", "Credit Card", "Mobile Payment"],
               "openingHoursSpecification": [
                 {
                   "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                   "opens": "08:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Saturday", "Sunday"],
+                  "opens": "09:00",
                   "closes": "22:00"
                 }
               ],
               "menu": "https://lecadre-traiteur.com/menu",
-              "deliveryService": "True"
+              "hasMenu": {
+                "@type": "Menu",
+                "name": "Menu Le Cadre",
+                "description": "Formules traiteur pour entreprises et événements",
+                "url": "https://lecadre-traiteur.com/menu"
+              },
+              "makesOffer": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Service traiteur entreprise",
+                    "description": "Formules repas pour entreprises avec livraison"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Traiteur événementiel",
+                    "description": "Service traiteur pour événements privés et professionnels"
+                  }
+                }
+              ],
+              "areaServed": {
+                "@type": "City",
+                "name": "Dakar",
+                "addressCountry": "SN"
+              },
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 14.6937,
+                  "longitude": -17.4441
+                },
+                "geoRadius": "50000"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "127",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "sameAs": [
+                "https://www.facebook.com/lecadretraiteur",
+                "https://www.instagram.com/lecadre_traiteur",
+                "https://www.linkedin.com/company/lecadre-traiteur"
+              ],
+              "founder": {
+                "@type": "Person",
+                "name": "Le Cadre Team"
+              },
+              "foundingDate": "2020",
+              "slogan": "Votre partenaire culinaire de confiance à Dakar",
+              "keywords": "traiteur Dakar, livraison repas entreprise, événementiel Sénégal, catering Dakar"
             })
           }}
         />
@@ -136,6 +221,10 @@ export default function RootLayout({
         </main>
         <Footer />
         <StatusModal />
+        <WebVitals />
+        <WebVitalsDebug />
+        <FontOptimization />
+        <ResourceOptimization />
       </body>
     </html>
   );
