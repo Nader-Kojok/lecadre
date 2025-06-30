@@ -2,10 +2,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faRocket, 
   faPhone, 
-  faUtensils,
-  faStar
+  faUtensils
 } from '@fortawesome/free-solid-svg-icons';
 
 export const CTASection = () => {
@@ -22,13 +20,13 @@ export const CTASection = () => {
               </span>
               <br/>
               <span className="text-white font-bold">
-                VOS REPAS ?
+                VOS PAUSES DEJ&apos; ?
               </span>
             </h2>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-secondary rounded-full"></div>
           </div>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Rejoignez des centaines d'entreprises qui ont déjà fait confiance à Le Cadre pour leurs repas d'équipe !
+            Rejoignez des centaines d&apos;entreprises qui ont déjà fait confiance à Le Cadre pour leurs repas d&apos;équipe !
           </p>
         </div>
         

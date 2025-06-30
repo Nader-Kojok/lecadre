@@ -46,7 +46,7 @@ export const IndividualFormulasSection = () => {
             </h3>
             <p className="text-gray-300 mb-4">3 repas par semaine</p>
             <div className="bg-secondary text-[#006464] px-4 py-2 rounded-full font-bold text-lg mb-6">
-              À partir de 45€/mois
+              À partir de 27 000 FCFA/mois
             </div>
             <ul className="space-y-3 mb-8 text-left">
               <li className="flex items-start">
@@ -90,7 +90,7 @@ export const IndividualFormulasSection = () => {
               </h3>
               <p className="text-gray-300 mb-4">5 repas par semaine</p>
               <div className="bg-secondary text-[#006464] px-4 py-2 rounded-full font-bold text-lg mb-6">
-                À partir de 75€/mois
+                À partir de 45 000 FCFA/mois
               </div>
             </div>
             
@@ -140,7 +140,7 @@ export const IndividualFormulasSection = () => {
               </h3>
               <p className="text-gray-300 mb-4">7 repas par semaine</p>
               <div className="bg-accent text-[#006464] px-4 py-2 rounded-full font-bold text-lg mb-6">
-                À partir de 95€/mois
+                À partir de 57 000 FCFA/mois
               </div>
             </div>
             
